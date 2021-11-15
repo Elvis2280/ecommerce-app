@@ -1,5 +1,7 @@
+import HomePage from './pages/HomePage';
+
 const App = () => {
-  return <p>Hola Mundo</p>;
+  return <HomePage />;
 };
 
 export default App;
