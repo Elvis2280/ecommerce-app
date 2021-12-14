@@ -40,15 +40,8 @@ const Directory = () => {
 
   return (
     <section className={Style.directoryBox}>
-      {sections.map(({ title, imageUrl, id, size }) => {
-        return (
-          <CategoryCard
-            key={id}
-            title={title}
-            imageUrl={imageUrl}
-            size={size}
-          />
-        );
+      {sections.map(({ id, ...infoProp }) => {
+        return <CategoryCard infoProp={infoProp} />;
       })}
     </section>
   );
